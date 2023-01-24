@@ -1,0 +1,392 @@
+
+    
+    /* REGISTER */
+    html{line-height:1.15;-webkit-text-size-adjust:100%}
+                body{margin:0}
+        
+            *,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}
+            
+    .container {
+          height: 150vh;
+          width: 100%;
+          background: url("/assets/img/signupback.jpg") repeat;
+          object-fit: cover;
+          display: flex;
+          justify-content: center;
+     
+          text-align: center;
+ 
+
+        }
+        .pagetitle {
+          font-family: century gothic; font-size: 40px; letter-spacing: 2px; color: white ; 
+        }
+        
+
+        .mainpage {
+          height: auto;
+          width: 40%;
+          background: rgba(255,255,255,0);
+          -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+          border: 1px solid rgba(255,255,255,0);
+          justify-content:center;
+          align-items:center;
+          text-align:center;
+          border: ridge 10px;
+          border-radius: 50px;
+          padding: 0;
+
+        }
+
+        .signupcontent {
+          display: flex;
+          padding: 0;
+          margin: 0;
+          justify-content:center;
+          align-items:center;
+          text-align:center;
+          height: auto;
+              
+            }
+
+            .inputtitle{
+              color:red; 
+              letter-spacing: .5px; 
+              background-color: white; 
+              border-radius: 6px;
+            }
+
+        
+
+       
+
+
+
+    .button {
+         padding: 0.8em 1.8em;
+         border: 2px solid white;
+         position: relative;
+         overflow: hidden;
+         background-color: transparent;
+         text-align: center;
+         text-transform: uppercase;
+         font-size: 20px;
+         transition: .3s;
+         z-index: 1;
+         font-family: inherit;
+         color: white;
+         height: 60px;
+         width: 400px;
+         margin-top:20px;
+         font-family: century gothic;
+         letter-spacing: 1.5px;
+         font-weight: 1000;
+    
+        }
+
+        .button::before {
+         content: '';
+         width: 0;
+         height: 680%;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%) rotate(45deg);
+         background: rgb(255, 255, 255);
+         transition: .5s ease;
+         display: block;
+         z-index: -1;
+        }
+
+        .button:hover::before {
+         width: 105%;
+        }
+
+        .button:hover {
+          color: black;
+
+        }
+
+        .inputbox {
+              position: relative;
+              width: 400px;
+              margin-bottom: 20px;
+              font-family: century gothic;
+              font-size: 20px;
+              letter-spacing: 2px;
+              color: white;
+              font-weight: 1000;
+              
+
+            }
+
+            .inputbox input {
+              position: relative;
+              width: 100%;
+              padding: 20px 10px 10px;
+              background: transparent;
+              outline: none;
+              box-shadow: none;
+              border: none;
+              color: black;
+              font-size: 1em;
+              letter-spacing: 0.05em;
+              transition: 0.5s;
+              z-index: 10;
+              letter-spacing: 2px;
+            }
+
+            .inputbox span {
+              position: absolute;
+              left: 0;
+              padding: 10px 10px 10px;
+              font-size: 20px;
+              color: #8f8f8f;
+              letter-spacing: 00.05em;
+              transition: 0.5s;
+              pointer-events: none;
+
+            }
+
+            .inputbox input:valid ~span,
+            .inputbox input:focus ~span {
+              color: white;
+              transform: translateX(-10px) translateY(-40px);
+    
+              font-size: 35px;
+            }
+
+            .inputbox i {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 2px;
+              background: white;
+              border-radius: 4px;
+              transition: 0.5s;
+              pointer-events: none;
+              z-index: 9;
+            }
+
+            .inputbox input:valid ~i,
+            .inputbox input:focus ~i {
+              height: 44px;
+            }
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            @media only screen and (max-device-width: 800px) {
+    .container {
+          height: 100%;
+          width: 100%;
+          background: url("/assets/img/signupback.jpg");
+          background-size: contain;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+        }
+        
+
+        .mainpage {
+          height: 80%;
+          width: 80%;
+          background: rgba(255,255,255,0);
+          -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+          border: 1px solid rgba(255,255,255,0);
+          justify-content:center;
+          align-items:center;
+          text-align:center;
+          border: ridge 10px;
+          border-radius: 50px;
+
+  }
+
+        .pagetitle {
+          font-size: 20px;
+          font-family: century gothic; 
+          letter-spacing: 2px; 
+          color: rgb(255, 255, 255);
+        }
+        
+        .signupcontent {
+          display: flex;
+          padding: 0;
+          margin: 0;
+          justify-content:center;
+          align-items:center;
+          text-align:center;
+          padding-top: 50px;
+          width: 100%;
+          height: auto;
+
+            }
+          .site-form {
+            width: 80%;
+            font-size: clamp(1rem,2.5vw,3rem);
+          }
+         
+
+        
+        .button {
+          padding: 0;
+          width: 300px;
+          height: 70px;
+          font-size: 15px;
+
+        }
+
+        .inputtitle {
+          color:red; 
+          letter-spacing: .5px; 
+          background-color: white; 
+          border-radius: 6px;
+          font-size: clamp(2rem,2.5vw,3rem)
+        }
+
+
+
+        .inputbox {
+              position: relative;
+              width: 100%;
+              margin-bottom: 20px;
+              font-family: century gothic;
+              font-size: clamp(2rem,2.5vw,3rem);
+              letter-spacing: 2px;
+              color: white;
+              font-weight: 1000;
+              
+
+            }
+
+    
+
+            .inputbox input {
+              position: relative;
+              width: 100%;
+              padding: 20px 10px 10px;
+              background: transparent;
+              outline: none;
+              box-shadow: none;
+              border: none;
+              color: black;
+              font-size: 1em;
+              letter-spacing: 0.05em;
+              transition: 0.5s;
+              z-index: 10;
+              letter-spacing: 2px;
+            }
+
+            .inputbox span {
+              position: absolute;
+              left: 0;
+              padding: 10px 10px 10px;
+              font-size: 20px;
+              color: #8f8f8f;
+              letter-spacing: 00.05em;
+              transition: 0.5s;
+              pointer-events: none;
+            
+            }
+
+            .inputbox input:valid ~span,
+            .inputbox input:focus ~span {
+              color: white;
+              transform: translateX(-10px) translateY(-40px);
+            
+              font-size: 35px;
+            }
+
+            .inputbox i {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 2px;
+              background: white;
+              border-radius: 4px;
+              transition: 0.5s;
+              pointer-events: none;
+              z-index: 9;
+            }
+
+            .inputbox input:valid ~i,
+            .inputbox input:focus ~i {
+              height: 3vh;
+            }
+
+
+            .button {
+         padding: 0.8em 1.8em;
+         border: 2px solid white;
+         position: relative;
+         overflow: hidden;
+         background-color: transparent;
+         text-align: center;
+         text-transform: uppercase;
+         font-size: 2rem;
+         transition: .3s;
+         z-index: 1;
+         font-family: inherit;
+         color: white;
+         height: 5vh;
+         width: 60vw;
+         margin-top:20px;
+         font-family: century gothic;
+         letter-spacing: 1.5px;
+         font-weight: 1000;
+    
+        }
+
+        .button::before {
+         content: '';
+         width: 0;
+         height: 680%;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%) rotate(45deg);
+         background: rgb(255, 255, 255);
+         transition: .5s ease;
+         display: block;
+         z-index: -1;
+        }
+
+        .button:hover::before {
+         width: 105%;
+        }
+
+        .button:hover {
+          color: black;
+
+        }
+
+
+
+
+
+      }

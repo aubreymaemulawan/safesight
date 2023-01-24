@@ -1,0 +1,625 @@
+html{line-height:1.15;-webkit-text-size-adjust:100%}
+body{margin:0}
+a{background-color:transparent}[hidden]
+{display:none}
+html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}
+
+body {
+font-family: century gothic;
+background-repeat:no-repeat;
+background-color: #121212;
+
+
+}
+
+.footer{
+
+font-size:1.3vh;
+justify-content:center;
+text-align:center;
+background:#121212;
+color:white;
+height:9.2vh;
+margin-top: -20px;
+padding-top: 7px;
+}
+
+
+.frontpage {
+
+width: 100%;
+height: 93vh;
+display: flex;
+margin: 0;
+background: url("/assets/img/landingpagecover.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+
+}
+
+
+.frontpagecontents {
+height: 93vh;
+width: 80%;
+
+
+}
+
+.frontpageheader {
+width: 100%;
+height: 200px;
+animation: headerpop 1s;
+display:flex;
+justify-content: center;
+animation-timing-function: cubic-bezier(1, -0.11, 0.59, 1.17);
+animation-duration: 1s;
+}
+
+.frontpageheader h1 {
+font-size: 6rem;color:red; 
+letter-spacing:5px; 
+animation: logopop .8s;
+font-weight: 1000; 
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.frontpageheader img {
+
+height: 350px; 
+width:350px;
+
+
+
+}
+
+
+@keyframes headerpop {
+0% {
+transform: translateX(-150px);
+
+
+}
+100% {
+transform: translateX(0);
+}
+}
+
+#logo { animation: headerpop 1.1s;}
+
+.frontpagedetails {
+width: 40%;
+display: flex;
+justify-content: center;
+align-self:center;
+text-align: center;
+margin-left: 50px;
+margin-top: 100px;
+background-color: white;
+height: 230px;
+padding: 20px;
+border-radius: 20px;
+background: rgba(255,255,255,0.6);
+-webkit-backdrop-filter: blur(1px);
+backdrop-filter: blur(1px);
+border: 1px solid rgba(255,255,255,0.3);
+border: solid 2px #121212;
+
+}
+
+.frontpagedetails p {
+text-align: justify; 
+font-size: 1.5rem;
+margin-top: -15px;
+}
+
+.frontpagecardcontainer {
+width: 100%;
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 80px;
+padding-top:100px;
+}
+
+@keyframes logopop {
+0% {
+transform: scale(0)translateY(-300px);
+
+}
+100% {
+transform: scale(1)translateY(0);
+}
+}
+
+#first {
+animation: logopop .5s
+}
+#second {
+animation: logopop .7s
+}
+#third {
+animation: logopop .9s
+}
+#fourth {
+animation: logopop 1.1s
+}	
+
+.frontpagecard {
+width: 160px;
+height: 150px;
+border: solid 5px #121212;
+object-fit: cover;
+border-radius: 20px;
+animation: logopop 1s;
+background-color: rgb(255, 255, 255);
+}
+
+.frontpagecard h1 {
+margin-top: -5px;
+-webkit-text-stroke-width: .5px;
+-webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.frontpagecard img {
+width: 150px;
+height: 150px;
+margin-top: -10px;
+transform: scale(1);
+}
+
+
+.getstarted {
+width:20%; 
+height:93vh; 
+
+margin: 0;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+
+
+}
+
+.getstartedbutton {
+background-color: #bc2a2a;
+padding: 5px;
+position: relative;
+transition: 0.5s;
+font-size: 19px;
+border-radius: 10px;
+width: 220px;
+height: 80px;
+display: flex;
+justify-content: center;
+font-family: century gothic;
+letter-spacing: 1px;
+font-weight: 1000;
+animation: getstartedpop 1s;
+margin-left: -200px;
+margin-top: -200px;
+
+}
+@keyframes getstartedpop {
+
+0% {
+transform: translateY(-500px);
+}
+
+100% {
+transform: translateY(0px);
+}
+
+}
+
+.getstartedbutton p {
+position: absolute;
+top: 0.4em;
+left: 2.3em;
+margin: 0;
+padding: 0;
+transition: .5s;
+color:white ;
+
+}
+
+.getstartedbutton svg {
+position: absolute;
+top: .5em;
+right: -4.1em;
+margin: 0;
+padding: 0;
+opacity: 0;
+transition: 0.5s;
+height: 3.5em;
+fill: #fff
+}
+
+.getstartedbutton:hover p {
+left: 0.6em;
+color: red;
+}
+
+.getstartedbutton:hover svg {
+opacity: 1;
+}
+
+.getstartedbutton:hover {
+background-color: white;
+
+}
+
+
+.aboutusbutton {
+background-color: #bc2a2a;
+padding: 5px;
+position: relative;
+transition: 0.5s;
+font-size: 17px;
+border-radius: 10px;
+width: 160px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: century gothic;
+letter-spacing: 1px;
+font-weight: 1000;
+animation: getstartedpop 1s;
+margin-left: -180px;
+margin-top: -120px;
+}
+
+.aboutusbutton p {
+position: absolute;
+top: 0.4em;
+left: 2.3em;
+margin: 0;
+padding: 0;
+transition: .5s;
+color:white ;
+
+}
+
+.aboutusbutton svg {
+position: absolute;
+top: .5em;
+right: -6.4em;
+margin: 0;
+padding: 0;
+opacity: 0;
+transition: 0.5s;
+height: 2em;
+fill: #fff
+}
+
+.aboutusbutton:hover p {
+left: 0.6em;
+color: red;
+}
+
+.aboutusbutton:hover svg {
+opacity: 1;
+}
+
+.aboutusbutton:hover {
+background-color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+
+html {
+font-family: century gothic;
+
+
+}
+
+
+
+.frontpage {
+
+width: 100%;
+height: auto;
+display: flex;
+margin: 0;
+flex-direction: column;
+background: url("/assets/img/landingpagecover.jpg");
+background-repeat: no-repeat;
+background-size: 150% 70%;
+overflow-x: hidden;
+
+}
+
+
+.frontpagecontents {
+height: auto;
+width: 100%;
+
+display: flex;
+flex-direction: column;
+
+}
+
+.frontpageheader {
+width: 100%;
+height: 150px;
+animation: headerpop 1s;
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+text-align: center;
+
+
+
+
+}
+
+.frontpageheader h1 {
+font-size: 3rem;color:red; 
+letter-spacing:5px; 
+animation: logopop .8s;
+font-weight: 1000; 
+
+}
+
+.frontpageheader img {
+
+height: 150px; 
+width:150px;
+margin-top: 150px;
+
+
+
+
+
+}
+
+.frontpagedetails {
+width: 100%;
+height: 300px;
+display: flex;
+justify-content: center;
+align-self:center;
+text-align: center;
+font-size: 1rem;
+margin-top: 20px;
+margin-left: 0px;
+padding: 0px 25px 0px 25px ;
+padding: 20px;
+border-radius: 20px;
+background: rgba(255,255,255,0.6);
+-webkit-backdrop-filter: blur(1px);
+backdrop-filter: blur(1px);
+border: 1px solid rgba(255,255,255,0.3);
+border: solid 2px #121212;
+
+
+}
+
+.frontpagedetails p {
+
+text-align: justify; 
+font-size: .8rem;
+
+
+}
+
+.frontpagecardcontainer {
+width: 100%;
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+
+padding-top:200px;
+}
+
+
+.frontpagecard {
+width: 70px;
+height: 60px;
+border: solid 5px #121212;
+object-fit: cover;
+border-radius: 20px;
+animation: logopop 1s;
+background-color: rgba(255, 255, 255, 0.774);
+}
+
+.frontpagecard h1 {
+font-size: 15px;
+-webkit-text-stroke-width: .5px;
+-webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.frontpagecard img {
+width: 60px;
+height: 60px;
+
+
+transform: scale(1);
+}
+
+
+
+
+
+.getstarted {
+width: 100%;
+background-color:#121212;
+margin: 0;
+height: 300px;
+margin-bottom: 0;
+
+
+
+}
+
+
+.getstartedbutton {
+background-color: #bc2a2a;
+padding: 5px;
+position: relative;
+transition: 0.5s;
+font-size: 14px;
+border-radius: 10px;
+width: 160px;
+height: 60px;
+font-family: century gothic;
+letter-spacing: 1px;
+font-weight: 1000;
+text-align: center;
+margin-top: -200px;
+margin-left: 0px;
+margin-top: 0px;
+
+
+}
+
+.getstartedbutton p {
+position: absolute;
+top: 0em;
+left: 2.8em;
+margin: 0;
+padding: 0;
+transition: .5s;
+color:white ;
+
+}
+
+.getstartedbutton svg {
+position: absolute;
+top: .5em;
+right: -4.1em;
+margin: 0;
+padding: 0;
+opacity: 0;
+transition: 0.5s;
+height: 3.5em;
+fill: #fff
+}
+
+.getstartedbutton:hover p {
+left: 0.6em;
+color: red;
+}
+
+.getstartedbutton:hover svg {
+opacity: 1;
+}
+
+.getstartedbutton:hover {
+background-color: white;
+
+}
+
+
+.aboutusbutton {
+background-color: #bc2a2a;
+padding: 5px;
+position: relative;
+transition: 0.5s;
+font-size: 13px;
+border-radius: 10px;
+width: 160px;
+height: 40px;
+margin-top:20px;
+font-family: century gothic;
+letter-spacing: 1px;
+font-weight: 1000;
+text-align: center;
+margin-left: 0px;
+margin-top: 0px;
+
+
+
+
+}
+
+.aboutusbutton p {
+position: absolute;
+top: 0.4em;
+left: 3.3em;
+margin: 0;
+padding: 0;
+transition: .5s;
+color:white ;
+
+}
+
+.aboutusbutton svg {
+position: absolute;
+top: .5em;
+right: -6.4em;
+margin: 0;
+padding: 0;
+opacity: 0;
+transition: 0.5s;
+height: 2em;
+fill: #fff
+}
+
+.aboutusbutton:hover p {
+left: 0.6em;
+color: red;
+}
+
+.aboutusbutton:hover svg {
+opacity: 1;
+}
+
+.aboutusbutton:hover {
+background-color: white;
+
+}
+
+
+.footer{
+padding-top:5vh;
+font-size:1.3vh;
+width: 100%;
+background-color: #121212;
+color:white;
+height:150px;
+margin-top: -100px;
+justify-content: center;
+text-align: center;
+align-items: center;
+
+
+}
+.footer p{
+margin-top: 30px;
+font-size: 10px;
+}
+
+
+
+
+}
+

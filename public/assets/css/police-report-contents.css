@@ -1,0 +1,1004 @@
+
+body {
+    font-family: century-gothic;
+    background: url("/assets/img/signupback.jpg")  no-repeat fixed;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+}
+a {
+text-decoration: none;
+}
+
+.mainpage {
+
+    width: 100%;
+    height: 97vh;
+                    
+                                     
+    }
+.navbar {
+                    
+height: 80px;
+width: 100%;
+background: rgba(255,255,255,.5);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border: 1px solid rgb(0, 0, 0);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+
+.contents {
+height: 100%;
+width: 100%;
+overflow-x: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 10px;
+border-radius: 20px ;
+
+
+}
+
+
+
+.accountpane{
+width: 33.3%;
+height: 80px;
+display: flex;
+justify-content: center;
+
+}
+
+
+.userinfo{
+
+font-size: 3rem;
+font-family: century gothic;
+color: black;
+font-weight: 1000;
+margin-left: 20px;
+padding-top: 5px;
+
+
+
+}
+
+.profpicture {
+width: 70px;
+height: 70px;
+margin-top: 5px;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-radius: 20px;
+font-family: century gothic;
+font-weight: 1000;
+margin-left: 5px;
+
+      
+}
+
+
+
+
+
+
+.options {
+
+height: 80px;
+width: 33.3%;
+
+border: solid 1px;
+display: flex;
+text-align: center;
+
+justify-content:space-around;
+
+align-items: center;
+
+border: 0px;
+
+
+
+
+}
+
+.option-list {
+
+height: 40px;
+width: 200px;
+background-color: white;
+border: solid 1px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+font-family: century gothic;
+
+
+
+
+
+
+
+
+
+
+}
+
+.option-list {
+
+letter-spacing: 1px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+ font-size: 1rem;
+
+}
+
+.option-list::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: #212121;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+
+}
+
+.option-list:hover {
+ color: #e8e8e8;
+}
+
+.option-list:hover::before {
+ width: 100%;
+}
+
+
+
+
+
+.logout {
+    width: 33.3%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+    align-items: center;
+
+
+}
+
+
+.buttonlogout {
+ --color: #ad0b0b;
+ font-family: inherit;
+
+ width: 8em;
+ height: 2.6em;
+ line-height: 2.5em;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid var(--color);
+ transition: color .5s;
+ z-index: 1;
+ font-size: 17px;
+ border-radius: 6px;
+ font-weight: 1000;
+ color: var(--color);
+ font-family: century gothic;
+    
+
+}
+
+.buttonlogout:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: var(--color);
+ height: 150px;
+ width: 200px;
+ border-radius: 50%;
+}
+
+.buttonlogout:hover {
+ color: #fff;
+}
+
+.buttonlogout:before {
+ top: 100%;
+ left: 100%;
+ transition: all .7s;
+}
+
+.buttonlogout:hover:before {
+ top: -30px;
+ left: -30px;
+}
+
+.buttonlogout:active:before {
+ background: #a30c0c;
+ transition: background 0s;
+}
+
+
+
+.dashboardcontainer {
+height: 80%;
+width: 97%;
+
+background-position: 50% 50%;
+
+margin-top: 20px;
+margin-right: 40px;
+margin-left: 20px;
+border-radius: 20px;
+padding: 20px 0px 20px 0px;
+justify-content: center;
+font-family: century gothic;
+font-size: clamp(.5rem,2.5vw,1rem);
+font-weight: 1000;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+}
+
+.report {
+height: 90%;
+width: 90%;
+
+background: rgba(97, 97, 97, 0.6);
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.45);        
+
+border-radius: 15px;
+justify-content: center;
+
+justify-content: center;
+align-items: center;
+display: flex;
+}
+     
+
+.reportimage {
+    height: 90%;
+    width: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+}
+.reportdetails {
+    height: 90%;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1.2rem;
+}
+
+.reportdetails p {
+    margin-left: 50px;
+    font-size: clamp(.5rem,2.5vw,1rem);
+}
+
+.reportdetails h1 {
+    font-size: clamp(.5rem,2.5vw,1rem);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.reportdetails h2 {
+    font-size: clamp(.5rem,2.5vw,1.5rem);
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    color: red;
+    padding-bottom: 20px;
+}
+
+
+.backbuttoncontainer {
+
+    width:90%;
+    height: 1vh;
+
+
+}
+.backbutton {
+
+ position: relative;
+ margin: auto;
+ padding: 12px 18px;
+ transition: all 0.2s ease;
+ border: none;
+ background: none;
+ padding-left: 30px;
+ 
+ 
+
+
+
+}
+
+.backbutton:before {
+ border: solid 5px white;
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ display: block;
+ border-radius: 50px;
+ background: #ff0000;
+ width: 110px;
+ height: 45px;
+ transition: all 0.3s ease;
+ 
+}
+
+.backbutton span {
+ position: relative;
+ font-family: century gothic;
+ font-size: 1rem;
+ font-weight: 800;
+ letter-spacing: 0.05em;
+ color: #ffffff;
+
+
+}
+
+.backbutton svg {
+ position: relative;
+ top: 0;
+ fill: none;
+ stroke-linecap: round;
+ stroke-linejoin: round;
+ stroke: #ffffff;
+ stroke-width: 6;
+ transition: all 0.09s ease;
+
+}
+
+.backbutton:hover:before {
+ 
+ background: #ff0000;
+}
+
+.backbutton:active svg {
+    transform: translateX(-10px);
+}
+
+.backbutton:active {
+ transform: scale(0.95);
+ 
+}   
+
+
+
+.reportbuttoncontainer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex-direction: column;
+
+    
+}
+
+
+
+.reportbutton {
+     background: #ff0000;
+     font-family: century gothic;
+     padding: 0.6em 1.3em;
+     font-weight: 700;
+     font-size: 20px;
+     border: 3px solid black;
+     border-radius: 0.4em;
+     box-shadow: 0.1em 0.1em;
+    padding: 30px;
+    width: 100%;
+  
+    
+ 
+
+
+    }
+
+    .reportbutton:hover {
+     transform: translate(-0.05em, -0.05em);
+     box-shadow: 0.15em 0.15em;
+    }
+
+    .reportbutton:active {
+     transform: translate(0.05em, 0.05em);
+     box-shadow: 0.05em 0.05em;
+    }
+
+    .ignorebutton {
+     background: #9b9a9a;
+     font-family: century gothic;
+     padding: 0.6em 1.3em;
+     font-weight: 700;
+     font-size: 15px;
+     border: 3px solid black;
+     border-radius: 0.4em;
+     box-shadow: 0.1em 0.1em;
+
+     width: 200px;
+     height: 40px;
+                    
+    }
+    
+    .ignorebutton:hover {
+     transform: translate(-0.05em, -0.05em);
+     box-shadow: 0.15em 0.15em;
+    }
+    
+    .ignorebutton:active {
+     transform: translate(0.05em, 0.05em);
+     box-shadow: 0.05em 0.05em;
+    }
+
+
+            /* The Modal (background) */
+            .confirmreport {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            
+            /* Modal Content */
+            .confirmreportcontents {
+              background-color: #fefefe;
+              margin: auto;
+              padding: 20px;
+              border: 1px solid #888;
+              width: 50%;
+              height: 50%;
+              text-align: center;
+           
+            }
+
+            .confirmreportcontents p {
+                font-size: clamp(1rem,2.5vw,2rem);
+            }
+            
+            /* The Close Button */
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+          
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-device-width: 800px) {
+
+body{ font-size: 1rem; overflow-x: hidden;}
+
+.mainpage {
+
+width: 100%;
+height: 90vh;
+
+                 
+}
+
+.navbar {
+
+height: 23vh;
+width: 101%;
+background: rgba(255,255,255,.5);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border: 1px solid rgb(0, 0, 0);
+display: flex;
+flex-direction: column;
+
+justify-content: center;
+align-items: center;
+}
+
+
+
+
+.contents {
+height: 100%;
+width: 100%;
+overflow-x: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 0px;
+border-radius: 20px ;
+
+
+}
+
+
+
+.accountpane{
+width: 100%;
+height: 100px;
+display: flex;
+justify-content: center;
+
+
+}
+
+
+.userinfo{
+
+font-size: 5rem;
+font-family: century gothic;
+color: black;
+font-weight: 1000;
+margin-left: 20px;
+padding-top: 5px;
+
+
+
+}
+
+.profpicture {
+width: 100px;
+height: 100px;
+margin-top: 5px;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-radius: 100px;
+font-family: century gothic;
+font-weight: 1000;
+margin-left: 5px;
+
+
+}
+
+
+
+
+
+
+.options {
+
+height: 150px;
+width: 100%;
+
+border: solid 1px;
+display: flex;
+
+text-align: center;
+
+justify-content:center;
+gap: 10px;
+
+align-items: center;
+
+border: 0px;
+
+
+
+
+
+}
+
+.option-list {
+
+height: 80px;
+width: 300px;
+background-color: white;
+border: solid 1px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+font-family: century gothic;
+
+
+
+
+
+
+
+
+
+
+}
+
+.option-list {
+
+letter-spacing: 1px;
+border: unset;
+border-radius: 15px;
+color: #212121;
+z-index: 1;
+background: #e8e8e8;
+position: relative;
+font-weight: 1000;
+-webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+transition: all 250ms;
+overflow: hidden;
+font-size: clamp(.5rem, 2.5vw, 3rem); 
+
+}
+
+.option-list::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 0;
+border-radius: 15px;
+background-color: #212121;
+z-index: -1;
+-webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+transition: all 250ms;
+
+}
+
+.option-list:hover {
+color: #e8e8e8;
+}
+
+.option-list:hover::before {
+width: 100%;
+}
+
+
+
+
+
+.logout {
+width: 100%;
+height: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+margin: 0px;
+padding: 0px;
+
+
+
+
+
+
+}
+
+
+.buttonlogout {
+--color: #ad0b0b;
+font-family: inherit;
+
+width: 12em;
+height: 5em;
+line-height: 4em;
+
+overflow: hidden;
+border: 2px solid var(--color);
+transition: color .5s;
+z-index: 1;
+font-size: 17px;
+border-radius: 6px;
+font-weight: 1000;
+color: var(--color);
+font-family: century gothic;
+
+
+}
+
+
+.dashboardcontainer {
+height: 90%;
+width: 95%;
+
+margin:0;
+margin-top: 20px;
+background-position: 50% 50%;
+
+
+border-radius: 20px;
+
+justify-content: center;
+font-family: century gothic;
+font-size: clamp(.5rem,2.5vw,1rem);
+font-weight: 1000;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+
+}
+
+.backbutton {
+    margin-top: -50px;
+
+ 
+}
+
+.report {
+height: 95vh;
+width: 95%;
+
+background: rgba(97, 97, 97, 0.6);
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.45);        
+
+border-radius: 15px;
+justify-content: center;
+
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+     
+
+.reportimage {
+    height: 30vh;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    font-size: clamp(2rem,2.5vw,5rem);
+
+}
+
+.reportdetails {
+    height: 40vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 0px 0px 0px 0px;
+    font-size: clamp(1rem, 2.5vw, 5rem); 
+    
+    
+  
+}
+
+.reportdetails p {
+    
+    font-size: clamp(1rem, 2.5vw, 5rem); 
+
+}
+
+.reportdetails h1 {
+    
+    font-size: clamp(3rem, 2.5vw, 5rem);
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+.reportbutton {
+     background: #ff0000;
+     font-family: century gothic;
+     padding: 0.6em 1.3em;
+     font-weight: 700;
+     font-size: 20px;
+     border: 3px solid black;
+     border-radius: 0.4em;
+     box-shadow: 0.1em 0.1em;
+    padding: 30px;
+    width: 30vw;
+    height: 5vh;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: clamp(1rem,2.5vw,2rem);
+
+
+    }
+
+    .reportbutton:hover {
+     transform: translate(-0.05em, -0.05em);
+     box-shadow: 0.15em 0.15em;
+    }
+
+    .reportbutton:active {
+     transform: translate(0.05em, 0.05em);
+     box-shadow: 0.05em 0.05em;
+    }
+
+    .ignorebutton {
+     background: #9b9a9a;
+     font-family: century gothic;
+     padding: 0.6em 1.3em;
+     font-weight: 700;
+     font-size:1rem;
+     border: 3px solid black;
+     border-radius: 0.4em;
+     box-shadow: 0.1em 0.1em;
+     font-size: clamp(1rem,2.5vw,2rem);
+     width: 250px;
+     height: 60px;
+                    
+    }
+    
+    .ignorebutton:hover {
+     transform: translate(-0.05em, -0.05em);
+     box-shadow: 0.15em 0.15em;
+    }
+    
+    .ignorebutton:active {
+     transform: translate(0.05em, 0.05em);
+     box-shadow: 0.05em 0.05em;
+    }
+
+
+
+
+
+
+
+
+    /* The Modal (background) */
+    .confirmreport {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            
+            /* Modal Content */
+            .confirmreportcontents {
+              background-color: #fefefe;
+              margin: auto;
+              padding: 20px;
+              border: 1px solid #888;
+              width: 50%;
+              height: auto;
+              text-align: center;
+           
+            }
+
+            .confirmreportcontents p {
+                font-size: clamp(1rem,2.5vw,2rem);
+            }
+            
+            /* The Close Button */
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+          
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+
+}
