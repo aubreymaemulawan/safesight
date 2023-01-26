@@ -304,7 +304,7 @@ border-radius: 20px ;
     font-weight: 1000;
     overflow-y:auto;
     padding-top: 20px;
-    overflow-y: scroll;
+  
  
 
 
@@ -588,9 +588,11 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
+text-decoration: none;
 margin: 0px;
 padding: 0px;
+color: black;
+text-decoration: none;
 
 
 
@@ -615,8 +617,9 @@ z-index: 1;
 font-size: 17px;
 border-radius: 6px;
 font-weight: 1000;
-color: var(--color);
+color: black;
 font-family: century gothic;
+text-decoration: none;
 
 
 }
