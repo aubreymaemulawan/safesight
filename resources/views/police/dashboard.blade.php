@@ -39,7 +39,7 @@
                     <div class="dashboardcontents">
                         <?php
                             $date = new DateTime($rep->created_at);
-                            $result = $date->format('F j, Y h:m a');
+                            $result = $date->format('F j, Y h:i a');
                         ?>
                         <div> SAFESIGHT HOME SECURITY REPORT - {{$result}}</div>  
                     </div>

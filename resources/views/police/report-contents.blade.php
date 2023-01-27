@@ -48,7 +48,7 @@
                                 <p>
                                     <?php
                                         $date = new DateTime($report->created_at);
-                                        $result = $date->format('F j, Y h:m a');
+                                        $result = $date->format('F j, Y h:i a');
                                     ?>
                                     DATE AND TIME : {{$result}}         
                                 </p>
