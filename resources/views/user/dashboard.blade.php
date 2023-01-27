@@ -34,10 +34,10 @@
             <a href="/report-contents-{{$fc->id}}" class="">
             <div class="dashboardcontents">
                 <?php
-                    $date = new DateTime($fc->created_at);
-                    $result = $date->format('F j, Y h:m a');
+                    $date1 = new DateTime($fc->created_at);
+                    $result1 = $date1->format('F j, Y h:i a');
                 ?>
-                <div> SAFESIGHT HOME SECURITY REPORT - {{$result}} </div>  
+                <div> SAFESIGHT HOME SECURITY REPORT - {{$result1}} </div>  
             </div>
             </a>
             @endforeach

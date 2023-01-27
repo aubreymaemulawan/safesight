@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PoliceController;
 use App\Http\Controllers\PageController;
+date_default_timezone_set('Asia/Manila');
 
 /*
 |--------------------------------------------------------------------------
