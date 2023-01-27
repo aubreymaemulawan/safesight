@@ -19,13 +19,13 @@
                 </a>
             </div>
             <div class="logout">
-                <button type="button" class="buttonlogout">
-                <a href="{{ route('logout') }}" 
+            <a href="{{ route('logout') }}" 
                     onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();">
+                    document.getElementById('logout-form').submit();"><button type="button" class="buttonlogout">
+                
                     {{ __('LOGOUT') }}
-                </a>
-                </button>
+                
+                </button></a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">@csrf</form>
             </div> 
         </div>
@@ -52,7 +52,7 @@
                         <p>
                             <?php
                                 $date = new DateTime($faces->created_at);
-                                $result = $date->format('F j, Y h:m a');
+                                $result = $date->format('F j, Y h:i a');
                             ?>
                             DATE AND TIME : {{$result}}         
                         </p>

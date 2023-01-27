@@ -11,13 +11,15 @@
                 <div class="userinfo">{{Auth::user()->first_name}}</div>
             </div>
             <div class="logout">
-                <button type="button" class="buttonlogout">
-                <a href="{{ route('logout') }}" 
+            <a href="{{ route('logout') }}" 
                     onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
+                    <button type="button" class="buttonlogout">
+                
                     {{ __('LOGOUT') }}
-                </a>
+                
                 </button>
+            </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">@csrf</form>
             </div> 
         </div>
@@ -37,7 +39,7 @@
                     <div class="dashboardcontents">
                         <?php
                             $date = new DateTime($rep->created_at);
-                            $result = $date->format('F j, Y h:m a');
+                            $result = $date->format('F j, Y h:i a');
                         ?>
                         <div> SAFESIGHT HOME SECURITY REPORT - {{$result}}</div>  
                     </div>

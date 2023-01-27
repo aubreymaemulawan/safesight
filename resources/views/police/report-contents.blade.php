@@ -12,13 +12,15 @@
                 <div class="userinfo">{{Auth::user()->first_name}}</div>
             </div>   
                     <div class="logout">
-                        <button type="button" class="buttonlogout">
-                        <a href="{{ route('logout') }}" 
+                    <a href="{{ route('logout') }}" 
                             onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
+                            <button type="button" class="buttonlogout">
+                        
                             {{ __('LOGOUT') }}
-                        </a>
+                        
                         </button>
+                        </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">@csrf</form>
                     </div> 
                 </div>
@@ -46,7 +48,7 @@
                                 <p>
                                     <?php
                                         $date = new DateTime($report->created_at);
-                                        $result = $date->format('F j, Y h:m a');
+                                        $result = $date->format('F j, Y h:i a');
                                     ?>
                                     DATE AND TIME : {{$result}}         
                                 </p>

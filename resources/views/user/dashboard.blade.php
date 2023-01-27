@@ -18,13 +18,14 @@
             </a>
         </div>
         <div class="logout">
-            <button type="button" class="buttonlogout">
-            <a href="{{ route('logout') }}" 
+        <a href="{{ route('logout') }}" 
                 onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();">
+                <button type="button" class="buttonlogout">
+            
                 {{ __('LOGOUT') }}
-            </a>
-            </button>
+            
+            </button></a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">@csrf</form>
         </div> 
     </div>
@@ -34,8 +35,13 @@
             <a href="/report-contents-{{$fc->id}}" class="">
             <div class="dashboardcontents">
                 <?php
+<<<<<<< HEAD
                     $date1 = new DateTime($fc->created_at);
                     $result1 = $date1->format('F j, Y h:i a');
+=======
+                    $date = new DateTime($fc->created_at);
+                    $result = $date->format('F j, Y h:i a');
+>>>>>>> b7d8317530c338568699ba1e5de064d0db9648fd
                 ?>
                 <div> SAFESIGHT HOME SECURITY REPORT - {{$result1}} </div>  
             </div>

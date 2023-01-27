@@ -148,7 +148,7 @@
                                 autofocusaria-describedby="emailHelp"
                                 autofocus
                             >
-                            <span>Username</span>
+                            <span>Email</span>
                             <i></i>
                         </div>
 
@@ -172,11 +172,11 @@
                 <button type="submit" class="button" >{{ __('Login') }}</button><br>
             </form>
 
-            <!-- <a href="/forgotpass" style="text-decoration: none;">
+             <a href="/forgotpass" style="text-decoration: none;">
                 <button class="forgotpassword">
                     <h3 style="text-decoration: none;">forgotten your password?</h3>
                 </button>
-            </a>  -->
+            </a> 
         </div>
     </div>
     <div class="subpage">
