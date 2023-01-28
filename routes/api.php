@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReportInformationController;
-use App\Http\Controllers\DeviceIController;
+use App\Http\Controllers\DeviceController;
 date_default_timezone_set('Asia/Manila');
 
 /*

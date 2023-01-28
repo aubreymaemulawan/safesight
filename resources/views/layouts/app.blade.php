@@ -35,15 +35,21 @@
             @yield('register_content')
         @endif
         @else
-            <!-- Admin User -->
+            <!-- User -->
             @if( Auth::user()->user_type == 1)
                 @yield('modal')
+                <div class="mainpage"> 
+                @include('user.navbar')
                 @yield('user_content')
+                </div>
 
-            <!-- Staff User -->
+            <!-- Police -->
             @elseif( Auth::user()->user_type == 2)
                 @yield('modal')
+                <div class="mainpage"> 
+                @include('police.navbar')
                 @yield('police_content')
+                </div>
         @endif
     @endguest
         <!-- <main class="py-4"> -->

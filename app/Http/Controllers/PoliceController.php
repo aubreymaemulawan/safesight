@@ -16,10 +16,18 @@ class PoliceController extends Controller
     }
     
     public function index(Request $request) {
-        $report = ReportInformation::where('is_validated',1)->get();
+        $report = ReportInformation::where('is_validated',1)->orderBy('created_at','desc')->get();
         $cnt_report = count($report);
         $month = ReportInformation::where('is_validated',1)->whereYear('created_at', '=', date('Y'))->whereMonth('created_at', '=', date('m'))->get();
         $cnt_month = count($month);
         return view('police.dashboard',compact('report','cnt_report','cnt_month'));
+    }
+
+    public function tbl_police_dashboard(Request $request) {
+        $report = ReportInformation::where('is_validated',1)->orderBy('created_at','desc')->get();
+        $cnt_report = count($report);
+        $month = ReportInformation::where('is_validated',1)->whereYear('created_at', '=', date('Y'))->whereMonth('created_at', '=', date('m'))->get();
+        $cnt_month = count($month);
+        return view('police.table.tbl-police-dashboard',compact('report','cnt_report','cnt_month'));
     }
 }

@@ -298,7 +298,17 @@ display: flex;
     margin: 20px;
     border-radius: 20px;
     display: flex;
+    object-fit: cover;
 }
+
+.reportimage2 {
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    object-fit: contain;
+}
+
 .reportdetails {
     height: 90%;
     width: 40%;

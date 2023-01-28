@@ -10,19 +10,7 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-<<<<<<< HEAD
 use Auth;
-=======
-
-
-use Auth;
-
-
-
-
-
-
->>>>>>> b7d8317530c338568699ba1e5de064d0db9648fd
 class RegisterController extends Controller
 {
     /*

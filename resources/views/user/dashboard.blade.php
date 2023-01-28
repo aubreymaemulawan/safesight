@@ -5,53 +5,32 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="{{ asset('assets/css/user-dashboard.css') }}" />
 
-    <div class="mainpage"> 
-    <div class="navbar">
-        <div class="accountpane">
-            <img class="profpicture" src="{{ asset('storage/default.jpg') }}" alt="profile_picture">
-            <div class="userinfo">{{Auth::user()->first_name}}</div>
-        </div>  
-        <div class="options">
-            <a href="/user-profile" ><div class="option-list">
-                    Profile
-                </div> 
-            </a>
-        </div>
-        <div class="logout">
-        <a href="{{ route('logout') }}" 
-                onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();">
-                <button type="button" class="buttonlogout">
-            
-                {{ __('LOGOUT') }}
-            
-            </button></a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">@csrf</form>
-        </div> 
-    </div>
+    <!-- USER CONTENT -->
     <div class="contents">
         <div class="dashboardcontainer">
-        @foreach($faces as $fc)
-            <a href="/report-contents-{{$fc->id}}" class="">
-            <div class="dashboardcontents">
-                <?php
-<<<<<<< HEAD
-                    $date1 = new DateTime($fc->created_at);
-                    $result1 = $date1->format('F j, Y h:i a');
-=======
-                    $date = new DateTime($fc->created_at);
-                    $result = $date->format('F j, Y h:i a');
->>>>>>> b7d8317530c338568699ba1e5de064d0db9648fd
-                ?>
-                <div> SAFESIGHT HOME SECURITY REPORT - {{$result1}} </div>  
+            <div id="realtime_unrecognizedFaces">
             </div>
-            </a>
-            @endforeach
         </div>
-        
     </div>
-</div>
 @endsection
 
 @section('scripts')
+    <script>
+        function loadXMLDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("realtime_unrecognizedFaces").innerHTML =
+                    this.responseText;
+                }
+            };
+            xhttp.open("GET", "./tbl-user-dashboard", true);
+            xhttp.send();
+        }
+        setInterval(function(){
+            loadXMLDoc();
+            // 10 seconds
+        },10000);
+        window.onload = loadXMLDoc;
+    </script>
 @endsection

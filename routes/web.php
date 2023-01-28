@@ -27,20 +27,17 @@ Route::get('/about-us', function () {
 
 Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 //  User Web Views
 Route::group(['middleware' => ['auth', 'user']], function() {
     Route::get('/user', [UserController::class, 'index'])->name('user');
     Route::get('/report-contents-{id}', [PageController::class, 'report_contents']);
     Route::get('/user-profile', [PageController::class, 'user_profile']);
-
+    Route::get('/tbl-user-dashboard', [UserController::class, 'tbl_user_dashboard']);
 });
 
 //  Police Web Views
 Route::group(['middleware' => ['auth', 'police']], function() {
     Route::get('/police', [PoliceController::class, 'index'])->name('police');
     Route::get('/police-report-contents-{id}', [PageController::class, 'police_report_contents']);
-    Route::get('/police-profile', [PageController::class, 'police_profile']);
-
+    Route::get('/tbl-police-dashboard', [PoliceController::class, 'tbl_police_dashboard']);
 });

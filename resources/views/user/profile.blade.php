@@ -5,73 +5,23 @@
    <!-- STYLES -->
    <link rel="stylesheet" href="{{ asset('assets/css/user-profile.css') }}" />
    
-   <div class="mainpage"> 
-        <div class="navbar">
-            <div class="accountpane">
-                <img class="profpicture" src="{{ asset('storage/default.jpg') }}" alt="profile_picture">
-                <div class="userinfo">{{Auth::user()->first_name}}</div>
+   <!-- USER CONTENT -->
+    <div class="contents">
+        <a href="/user" class="backbuttoncontainer" ><button class="backbutton">
+            <svg viewBox="0 0 20 10" height="10px" width="15px">
+                <path d="M1,5 L25,5"></path>
+                <polyline points="8 1 1 5 8 9"></polyline>
+            </svg>
+            <span>back</span>
+            </button>
+        </a>
+        <div class="dashboardcontainer">
+            <div class="infocontainer">
+                <p> Name : {{Auth::user()->last_name}}, {{Auth::user()->first_name}}</p>
+                <p> Address : {{Auth::user()->address}}</p>
+                <p> Phone Number : {{Auth::user()->phone_no}}</p>
+                <p> Email : {{Auth::user()->email}}</p>
             </div>   
-            
-            <div class="logout">
-                <button type="button" class="buttonlogout">
-                <a href="{{ route('logout') }}" 
-                    onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();">
-                    {{ __('LOGOUT') }}
-                </a>
-                </button>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">@csrf</form>
-            </div> 
         </div>
-        <div class="contents">
-    
-                <a href="/user" class="backbuttoncontainer" ><button class="backbutton">
-
-                    <svg viewBox="0 0 20 10" height="10px" width="15px">
-                        <path d="M1,5 L25,5"></path>
-                        <polyline points="8 1 1 5 8 9"></polyline>
-                    </svg>
-                    <span>back</span>
-                    </button>
-                </a>
-    
-                        <div class="dashboardcontainer">
-
-                    <div class="infocontainer">
-                          <p> Name : {{Auth::user()->last_name}}, {{Auth::user()->first_name}}</p>
-                          <p> Address : {{Auth::user()->address}}</p>
-                          <p> Phone Number : {{Auth::user()->phone_no}}</p>
-                          <p> Email : {{Auth::user()->email}}</p>
-                     
-                          
-                    </div>   
-
-
-                          <!-- <form method="post" class="site-form">
-                            
-                                 
-                            <button type="submit" value="Register" class="button">UPDATE</button>
-
-                          </form> -->
-
-
-
-                         </div>
-    
-    
-    
-    
-                </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-            </div>
+    </div>
 @endsection

@@ -18,8 +18,12 @@ class UserController extends Controller
     public function index(Request $request) {
         $report = ReportInformation::all();
         $faces = UnrecognizedFaces::where('user_id', $request->user()->id)->orderBy('created_at','desc')->get();
-        // $total = UnrecognizedFaces::where('user_id', $request->user()->id)->get();
-        // $count = count($total);
         return view('user.dashboard',compact('report','faces'));
+    }
+
+    public function tbl_user_dashboard(Request $request) {
+        $report = ReportInformation::all();
+        $faces = UnrecognizedFaces::where('user_id', $request->user()->id)->orderBy('created_at','desc')->get();
+        return view('user.table.tbl-user-dashboard',compact('report','faces'));
     }
 }
